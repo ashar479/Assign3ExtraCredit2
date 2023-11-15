@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<ruleset name="Metrics"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+The Metrics ruleset contains rules that flag large / complex code. These rules are alternative implementations to
+those already existing in the Design ruleset kept apart until the Metrics framework matures.
+    </description>
+
+    <!-- Rules, that have been moved into a category -->
+    <rule ref="category/java/design.xml/CyclomaticComplexity" deprecated="true" />
+    <rule ref="category/java/design.xml/CognitiveComplexity" />
+    <rule ref="category/java/bestpractices.xml/LooseCoupling" deprecated="true" />
+
+    <rule ref="category/java/design.xml/CouplingBetweenObjects" deprecated="true" />
+    <rule ref="category/java/design.xml/ExcessiveImports" deprecated="true" />
+    <rule ref="category/java/design.xml/NPathComplexity" deprecated="true" />
+	<!-- from codesize.xml -->
+    <rule ref="category/java/design.xml/ExcessiveClassLength" deprecated="true" />
+    <rule ref="category/java/design.xml/ExcessiveMethodLength" deprecated="true" />
+    <rule ref="category/java/design.xml/ExcessiveParameterList" deprecated="true" />
+    <rule ref="category/java/design.xml/ExcessivePublicCount" deprecated="true" />
+    <rule ref="category/java/design.xml/NcssCount" deprecated="true" />
+    <rule ref="category/java/design.xml/TooManyFields" deprecated="true" />
+    <rule ref="category/java/design.xml/TooManyMethods" deprecated="true" />
+</ruleset>
